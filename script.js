@@ -131,6 +131,6 @@ const fillBoard = () => {
 while (currFullCells < nrOfFullCells) {
     fillBoard();
 }
-console.log(randBoard);
+//console.log(randBoard);
 //console.log(81 - currFullCells);
 //#endregion
