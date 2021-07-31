@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" type="module"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>SUDOKU</h1>
+    <hr><br>
+    <div id="main">
+        <div id="digits"></div>
+        <br>
+        <button id="reset">reset cell</button>
+        <br><br>
+        <table id="board"></table>
+        <i id="message"></i>
+    </div>
+    <br>
+</body>
+<style>
+    i {
+        font-size: x-large;
+        color: darkblue;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #main {
+        padding-left: 35%;
+    }
+
+    #reset {
+        width: 70px;
+    }
+
+    #digits > button {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    td > button {
+        width: 60px;
+        height: 60px;
+        background-color: grey;
+        color: rgb(51, 255, 0);
+    }
+
+    .leftBoarded {
+        border-left: 5px solid blue;
+    }
+
+    .rightBoarded {
+        border-right: 5px solid blue;
+    }
+
+    .topBoarded {
+        border-top: 5px solid blue;
+    }
+
+    .bottomBoarded {
+        border-bottom: 5px solid blue;
+    }
+
+    .origin {
+        color: black;
+    }
+</style>
+
+</html>
