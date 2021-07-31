@@ -118,7 +118,7 @@ const fillBoard = () => {
             let cell = document.querySelector(`#line${i}-col${j}`);
             if (Math.random() <= distribution && gameBoard[i][j] !== EMPTYID) {
                 gameBoard[i][j] = EMPTYID;//let empty
-            } else if (!gameBoard[i][j] && gameBoard[i][j] !== -1) {
+            } else if (!gameBoard[i][j] && gameBoard[i][j] !== EMPTYID) {
                 gameBoard[i][j] = randBoard[i][j];
                 cell.innerText = `${gameBoard[i][j]}`;
                 cell.disabled = true;
