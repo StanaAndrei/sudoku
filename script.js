@@ -51,10 +51,17 @@ const handleDigitBtnClick = e => {
     e.preventDefault();
     let { line, col } = getLineAndCol(selectedBtn);//*/
     let nr = Number(e.target.innerText);
+
+    if (selectedBtn.innerText.length) {
+        alert('cell already full');
+        return;
+    }
+
     if (!validator.validate(nr, line, col, gameBoard)) {
         alert('Nr. invalid!');
         return;
     }
+    
     currEmptyCells--;
     selectedBtn.innerText = `${nr}`;
     gameBoard[line][col] = nr;
