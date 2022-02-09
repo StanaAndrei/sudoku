@@ -72,6 +72,7 @@ const handleBoardBtnClick = e => {
 
 resetBtn.addEventListener('click', e => {
     selectedBtn.innerText = '';
+    currEmptyCells++;
 });
 
 //#region generate table
@@ -134,3 +135,6 @@ while (currFullCells < nrOfFullCells) {
 //console.log(randBoard);
 //console.log(81 - currFullCells);
 //#endregion
+if ((new URLSearchParams(window.location.search)).has('show-ans')) {
+    console.log(randBoard);
+}
